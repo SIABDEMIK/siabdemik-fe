@@ -1,0 +1,457 @@
+body {
+  background-color: #f5f3ee;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  --sb-size: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+#preloader {
+  background: #fff url("/public/830.gif") no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+nav {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+nav .navbar-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+nav .navbar-container img {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+nav .navbar-container .navbar-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+}
+nav .navbar-container .navbar-list ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav .navbar-container .navbar-list ul li {
+  cursor: pointer;
+  display: flex;
+  margin: 0 10px;
+  font-weight: 500;
+}
+nav .navbar-container .navbar-list ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .navbar-container .navbar-list ul li a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+}
+nav .navbar-container .button {
+  display: flex;
+}
+nav .navbar-container .button a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px 0 0 10px;
+}
+nav .navbar-container .button a.button-1 {
+  background-color: #ef8451;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+nav .navbar-container .button a.button-2 {
+  background-color: white;
+  color: #ef8451;
+  border: 2px solid #ef8451;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#home {
+  margin-top: 80px;
+}
+#home .main-container {
+  background-color: #0f393b;
+  height: 45rem;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+}
+#home .main-container .content-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: auto;
+  width: 70rem;
+  margin-bottom: 10rem;
+}
+#home .main-container .content-container .text-content {
+  color: white;
+}
+#home .main-container .content-container .text-content .head {
+  color: #ef8451;
+  font-weight: 700;
+}
+#home .main-container .content-container .text-content .center {
+  font-size: 60px;
+  margin: -10px 0;
+}
+#home .main-container .content-container .text-content .center span {
+  color: #ef8451;
+}
+#home .main-container .content-container .text-content button {
+  border: 1px solid #ef8451;
+  background-color: transparent;
+  color: #ef8451;
+  padding: 18px;
+  border-radius: 90px;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+#home .main-container .content-container .text-content button:hover {
+  background-color: #ef8451;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+#home .main-container .content-container .img-container {
+  text-align: center;
+}
+#home .card-container {
+  width: 70rem;
+  margin: auto;
+}
+#home .card-container .content-container {
+  grid-template-rows: repeat(3, 1fr);
+}
+#home .card-container .content-container .card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+}
+#home .card-container .content-container .card-content .card1 {
+  background-color: #ef8451;
+  border-radius: 20px;
+  top: -48px;
+  position: relative;
+  padding: 2em;
+}
+#home .card-container .content-container .card-content .card1 p {
+  color: #093532;
+}
+#home .card-container .content-container .card-content .card1 h1 {
+  color: #fff;
+  font-size: 45px;
+}
+#home .card-container .content-container .card-content .card1 button {
+  border: 1px solid #093532;
+  background-color: transparent;
+  color: #093532;
+  padding: 15px;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#home .card-container .content-container .card-content .card1 button:hover {
+  background-color: #093532;
+  color: #fff;
+  transition: 0.5s;
+}
+#home .card-container .content-container .card-content .card2 {
+  background-color: #124c51;
+  border-radius: 20px;
+  top: -48px;
+  position: relative;
+  padding: 2em;
+}
+#home .card-container .content-container .card-content .card2 p {
+  color: #ef8451;
+}
+#home .card-container .content-container .card-content .card2 h1 {
+  color: #fff;
+  font-size: 45px;
+}
+#home .card-container .content-container .card-content .card2 button {
+  border: 1px solid #ef8451;
+  background-color: transparent;
+  color: #ef8451;
+  padding: 15px;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#home .card-container .content-container .card-content .card2 button:hover {
+  background-color: #ef8451;
+  color: #fff;
+  transition: 0.5s;
+}
+#home .introduction-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  width: 75%;
+  margin: auto;
+}
+#home .introduction-content .content {
+  background-color: white;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 30px;
+}
+#home .introduction-content .content .image {
+  display: flex;
+  justify-content: center;
+}
+#home .introduction-content .content .image img {
+  width: 30%;
+}
+#home .introduction-content .content h1 {
+  font-size: 25px;
+}
+#home .info-container {
+  margin: auto;
+  width: 75%;
+}
+#home .info-container .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home .info-container div {
+  text-align: center;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+}
+#home .info-container div h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #0f393b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#home .info-container div p {
+  color: #ef8451;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+#home .contact-container {
+  margin: 20px auto;
+  width: 75%;
+  background-color: #f2ebe4;
+  padding: 20px;
+  border: 1px solid #f2ebe4;
+  border-radius: 20px;
+}
+#home .contact-container .contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+#home .contact-container .contact-content .contact-text {
+  margin: 10px;
+  position: relative;
+}
+#home .contact-container .contact-content .contact-text p {
+  color: #ef8451;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#home .contact-container .contact-content .contact-text h1 {
+  font-size: 50px;
+  margin: -0.3em 0;
+  font-weight: 500;
+  color: #093532;
+  line-height: 1.15em;
+}
+#home .contact-container .contact-content .contact-text h5 {
+  color: #0F393B;
+  line-height: 1.8em;
+  font-size: 100%;
+  text-align: justify;
+}
+#home .contact-container .contact-content .contact-form {
+  background-color: white;
+  margin: 10px;
+  padding: 20px 20px 60px 20px;
+  border-radius: 20px;
+  position: relative;
+}
+#home .contact-container .contact-content .contact-form .form-group {
+  margin-bottom: 10px;
+  width: 100%;
+}
+#home .contact-container .contact-content .contact-form .form-group input {
+  color: #6b8483;
+  background-color: #f5f3ee;
+  border: 1px solid #f5f3ee;
+  padding: 10px;
+  width: 95%;
+  border-radius: 10px;
+  outline: none;
+}
+#home .contact-container .contact-content .contact-form .form-group input:focus {
+  background-color: white;
+  border: 1px solid #ef8451;
+}
+#home .contact-container .contact-content .contact-form .form-group textarea {
+  color: #6b8483;
+  background-color: #f5f3ee;
+  border: 1px solid #f5f3ee;
+  padding: 10px;
+  width: 95%;
+  border-radius: 10px;
+  outline: none;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+  resize: none;
+}
+#home .contact-container .contact-content .contact-form .form-group textarea:focus {
+  background-color: white;
+  border: 1px solid #ef8451;
+}
+#home .contact-container .contact-content .contact-form button {
+  position: absolute;
+  right: 0;
+  border: 1px solid #ef8451;
+  background-color: #ef8451;
+  color: #fff;
+  margin: 5px 20px;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#home .contact-container .contact-content .contact-form button:hover {
+  background-color: transparent;
+  color: #ef8451;
+  transition: 0.5s;
+}
+#home .footer-container {
+  background-color: #093532;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  font-family: "DM Sans", Helvetica, Arial, Lucida, sans-serif;
+  margin-top: 3em;
+}
+#home .footer-container .footer-content {
+  text-align: center;
+  padding: 50px 0;
+  margin: auto;
+  width: 70%;
+}
+#home .footer-container .footer-content h1 {
+  color: white;
+  font-size: 50px;
+  line-height: 1.15em;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.1em;
+}
+#home .footer-container .footer-content .information {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  margin: 20px 0;
+}
+#home .footer-container .footer-content .information p {
+  color: white;
+  font-size: 1.4em;
+}
+#home .footer-container .footer-content .information p a {
+  color: white;
+  text-decoration: none;
+}
+#home .footer-container .footer-content .button-1 {
+  color: #ef8451;
+  border: 1px solid #ef8451;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#home .footer-container .footer-content .button-1:hover {
+  background-color: #ef8451;
+  color: #fff;
+  transition: 0.5s;
+}
+#home .footer-container .footer-content .button-2 {
+  color: #fff;
+  border: 1px solid white;
+  background-color: #093532;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-left: 3em;
+}
+#home .footer-container .footer-content .button-2:hover {
+  background-color: white;
+  color: #093532;
+  transition: 0.5s;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #666;
+  background-color: black;
+  font-size: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #666;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #2ea2cc;
+}
+footer a i {
+  font-size: 20px;
+}/*# sourceMappingURL=fiture.css.map */
