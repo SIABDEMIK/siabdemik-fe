@@ -270,6 +270,155 @@ nav {
   }
 
   .introduction-container {
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin: 0 auto;
+      max-width: 1200px;
+
+      .left-content {
+        max-width: 600px;
+        padding: 20px;
+
+        h1 {
+          color: #10332d;
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+        }
+
+        p {
+          color: #5a5a5a;
+          line-height: 1.6;
+          font-size: 1.1rem;
+          margin-bottom: 20px;
+        }
+
+        .btn-directions {
+          padding: 10px 20px;
+          border: 2px solid #f58250;
+          background-color: transparent;
+          color: #f58250;
+          font-weight: bold;
+          border-radius: 30px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #f58250;
+            color: white;
+          }
+        }
+      }
+
+      .right-content {
+        width: 350px;
+        margin-top: 50px;
+
+        .hours-container {
+          background-color: #10332d;
+          border-radius: 20px;
+          padding: 20px;
+          text-align: center;
+          position: relative;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+          .hours-header {
+            background-color: #f58250;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          .hours-content {
+            color: #ccc;
+            font-size: 1.2rem;
+            margin-top: 40px;
+
+            p {
+              margin: 20px 0;
+            }
+
+            strong {
+              color: white;
+              font-weight: bold;
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .faq-container {
+    width: 75%;
+    margin: auto;
+
+    p {
+      color: #ef8451;
+      margin-bottom: -1px;
+    }
+
+    span {
+      color: #093532;
+      font-size: 50px;
+    }
+
+    .faq-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 50px;
+
+      .faq-section {
+        .section {
+          margin-bottom: 1rem;
+
+          .header {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+
+            span {
+              color: #093532;
+              font-size: 16px;
+              font-weight: 700;
+            }
+
+            .faq-button {
+              background-color: transparent;
+              border: none;
+              font-size: 1.5rem;
+              cursor: pointer;
+              margin-left: 0.5rem;
+              color: #f76c39;
+              transition: color 0.2s ease;
+            }
+          }
+
+          .isi {
+            p {
+              color: #6b8483;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.3s ease-out;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      .form-section {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+      }
+    }
   }
 
   .footer-container {

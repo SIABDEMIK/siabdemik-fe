@@ -244,6 +244,132 @@ nav .navbar-container .button a.button-2 {
 #home .contact-container .introduction .introduction-content .content .text p {
   font-size: 13px;
 }
+#home .introduction-container {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+#home .introduction-container .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#home .introduction-container .container .left-content {
+  max-width: 600px;
+  padding: 20px;
+}
+#home .introduction-container .container .left-content h1 {
+  color: #10332d;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+#home .introduction-container .container .left-content p {
+  color: #5a5a5a;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+#home .introduction-container .container .left-content .btn-directions {
+  padding: 10px 20px;
+  border: 2px solid #f58250;
+  background-color: transparent;
+  color: #f58250;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#home .introduction-container .container .left-content .btn-directions:hover {
+  background-color: #f58250;
+  color: white;
+}
+#home .introduction-container .container .right-content {
+  width: 350px;
+  margin-top: 50px;
+}
+#home .introduction-container .container .right-content .hours-container {
+  background-color: #10332d;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#home .introduction-container .container .right-content .hours-container .hours-header {
+  background-color: #f58250;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#home .introduction-container .container .right-content .hours-container .hours-content {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
+#home .introduction-container .container .right-content .hours-container .hours-content p {
+  margin: 20px 0;
+}
+#home .introduction-container .container .right-content .hours-container .hours-content strong {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+#home .faq-container {
+  width: 75%;
+  margin: auto;
+}
+#home .faq-container p {
+  color: #ef8451;
+  margin-bottom: -1px;
+}
+#home .faq-container span {
+  color: #093532;
+  font-size: 50px;
+}
+#home .faq-container .faq-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+#home .faq-container .faq-content .faq-section .section {
+  margin-bottom: 1rem;
+}
+#home .faq-container .faq-content .faq-section .section .header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+#home .faq-container .faq-content .faq-section .section .header span {
+  color: #093532;
+  font-size: 16px;
+  font-weight: 700;
+}
+#home .faq-container .faq-content .faq-section .section .header .faq-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  color: #f76c39;
+  transition: color 0.2s ease;
+}
+#home .faq-container .faq-content .faq-section .section .isi p {
+  color: #6b8483;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  margin-right: 20px;
+}
+#home .faq-container .faq-content .form-section {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
 #home .footer-container {
   background-color: #093532;
   width: 100%;
