@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- ! Page Title Icon -->
+    <link rel="icon" href="/public/admin/images/chart-line-solid.svg" />
+    <!-- ! Bootstrap -->
+    <link rel="stylesheet" href="/src/admin/css/bootstrap.min.css" />
+    <!-- ! Main Template CSS File -->
+    <link rel="stylesheet" href="/src/admin/css/style.min.css" />
+    <link rel="stylesheet" href="/src/admin/css/framework.min.css" />
+    <link rel="stylesheet" href="/src/admin/css/darkMode.min.css" />
+    <!-- ! File Of Animations -->
+    <link rel="stylesheet" href="/src/admin/css/aos.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
+    <!-- ! Render All Elements Normally -->
+    <link rel="stylesheet" href="/src/admin/css/normalize.min.css" />
+    <!-- ! Font Awesome Library -->
+    <link rel="stylesheet" href="/src/admin/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/1c59cf9cb0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ! Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    />
+    <script>
+      window.onload = function () {
+        AOS.init();
+      };
+    </script>
+  </head>
+  <body>
+    <div class="dashboard d-flex">
+      <div class="sidebar bg-white position-relative">
+        <div class="holder position-fixed">
+          <h3 class="position-relative text-center fw-bold">
+            Gading Khairlambang
+          </h3>
+          <div class="links">
+            <ul>
+              <li>
+                <a class="active d-flex align-items-center" href="index.html">
+                  <i class="fa-regular fa-chart-bar fa-fw"></i>
+                  <span>Dashboard</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="log-out">
+            <span>
+              <i
+                class="fa-solid fa-arrow-right-from-bracket"
+                style="color: #e10000"
+              ></i>
+              <a href="/index.html">Log out</a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div
+          class="header bg-white d-flex justify-content-between align-items-center"
+        >
+          <div class="search position-relative">
+            <input
+              type="text"
+              id="keywordInput"
+              placeholder="Type A Keyword"
+              name="keyword"
+            />
+            <i class="fa-solid fa-search"></i>
+          </div>
+          <button id="darkmode-button" class="btn rounded-circle">
+            <i class="fa-solid fa-moon toggle-icon"></i>
+          </button>
+          <div class="profile">
+            <a href="profile.html">
+              <img src="/public/admin/images/avatar.png" alt="" />
+              <span>Admin</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/js/all.min.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
